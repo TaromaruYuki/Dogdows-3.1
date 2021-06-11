@@ -1,0 +1,48 @@
+:root {
+    --font-size: 1.2em;
+}
+
+@font-face {
+    font-family: 'DOS';
+    src: url("../fonts/Px437_IBM_EGA8.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-kerning: none;
+    font-kerning: none;
+    font-synthesis: none;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none;
+    font-variant-numeric: tabular-nums;
+}
+
+@keyframes blink {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+}
+
+.dos-window {
+    background-color: black;
+    color: white;
+    font-family: "DOS";
+    font-size: var(--font-size);
+    padding: 1%;
+}
+
+.dos-window * {
+    font-family: "DOS";
+    font-size: var(--font-size);
+}
+
+.dos-cursor {
+    animation: blink 1s linear infinite;
+    display: inline;
+}
+
+.no-select {
+    user-select: none;
+}
