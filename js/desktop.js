@@ -1,4 +1,4 @@
-window.history.replaceState("", "", "/")
+window.history.replaceState("", "", "index.html")
 
 const window_blue = "#0000A8";
 
