@@ -1,3 +1,5 @@
+window.history.replaceState("", "", "/")
+
 const window_blue = "#0000A8";
 
 new WinBox("Program Manager", {
