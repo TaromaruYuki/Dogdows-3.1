@@ -21,7 +21,10 @@ const action = {
 }
 
 function after_destroy() {
-    window.location.href = "dogdows_start.html"
+    let e = document.createElement("a")
+    e.href = "dogdows_start.html"
+    e.click()
+    // window.location.href = "dogdows_start.html"
 }
 
 const startup_dict = [
