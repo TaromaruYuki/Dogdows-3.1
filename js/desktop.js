@@ -1,4 +1,6 @@
-window.history.replaceState("", "", "index.html")
+if(!debug_mode) {
+    window.history.replaceState("", "", "index.html")
+}
 
 const window_blue = "#0000A8";
 
